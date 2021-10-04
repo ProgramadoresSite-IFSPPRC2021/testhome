@@ -1,0 +1,56 @@
+colocar no "head" de cada pagina html:    
+    <link rel="stylesheet" href="navefooter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+ 
+colocar no inicio do "body" de cada pagina:
+    <header>
+        <!--NavBar Inicio-->
+        <div class="wrapper">
+            <nav>
+                <input type="checkbox" id="show-search">
+                <input type="checkbox" id="show-menu">
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <div class="content">
+                    <img class="imglogo" src="./logo sem fundo p.png" alt="">
+                    <div class="logo"><a href="#">FakeIsFake</a></div>
+                    <ul class="links">
+    
+                        <li>
+                            <a href="#" class="desktop-link">Início</a>
+                            <input type="checkbox" id="show-temas">
+                            <label for="show-temas">Início</label>
+                            <ul>
+                                <li><a href="#">Economia</a></li>
+                                <li><a href="#">Saúde</a></li>
+                                <li><a href="#">Meio Ambiente</a></li>
+                                <li><a href="#">Política</a></li>
+                            </ul>
+                        </li>
+    
+                        <li><a href="#">Colaboradores</a></li>
+
+    
+                    </ul>
+                </div>
+                <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+                <form action="#" class="search-box">
+                    <input type="text" placeholder="Digite aqui o tema..." required>
+                    <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </form>
+            </nav>
+        </div>
+        <!--NavBar FIM-->
+        <div class="espacamento"></div>
+    </header>
+    
+    
+colocar no final do "body" de cada pagina:
+    <!--FOOTER-->
+    <footer>
+        <div class="footer-content">
+            <img class="imgfooter" src="./logo sem fundo.png" alt="logo">
+            <h4>IFSP - Informática</h4>
+        </div>
+    </footer>
+    <!--FOOTER FIM-->
+

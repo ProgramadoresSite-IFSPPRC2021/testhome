@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Verdana' , sans-serif;
+}
+
+.conteiner-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
+.card {
+  width: 25rem;
+  border-radius: 1rem;
+  margin: 1.875rem;
+}
+
+.img {
+  width: 25rem;
+  height: 15rem;
+  background-image: url('tema.jpg');
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  width: 24.8rem;
+  height: 4rem;
+  font-size: 2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: -2.5rem;
+  color: black;
+  text-align: center;
+  border-radius: 0 0 1rem 1rem;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #D3D3D3;
+  border-top: none;
+}
+
+.title h2 {
+  padding: 0.2rem;
+}
+
+.link {
+  text-decoration: none;
+}

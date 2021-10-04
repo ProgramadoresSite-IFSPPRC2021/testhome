@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cstyle.css" rel="stylesheet">
+    <link href="draganddrop.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="draganddrop.js"></script>
+    <title>Carousel</title>
+</head>
+
+<body>
+    <!-- Começo carrosel -->
+    <div class="slider">
+        <div class="slides">
+            <!-- Botão radio inicio -->
+            <input type="radio" name="radio-btn" id="r1">
+            <input type="radio" name="radio-btn" id="r2">
+            <input type="radio" name="radio-btn" id="r3">
+            <input type="radio" name="radio-btn" id="r4">
+            <input type="radio" name="radio-btn" id="r5">
+            <!-- Botão Radio fim -->
+            <!-- Começo imagens -->
+            <div class="slide um">
+                <img src="https://cdn.wallpapersafari.com/36/17/kR3zxF.jpg">
+            </div>
+            <div class="slide dois">
+                <img src="https://wallpapercave.com/wp/xwnHKVZ.jpg">
+            </div>
+            <div class="slide tres">
+                <img
+                    src="https://uhdwallpapers.org/uploads/converted/20/01/14/the-mandalorian-5k-1600x900_477555-mm-90.jpg">
+            </div>
+            <div class="slide quatro">
+                <img src="https://images.hdqwalls.com/download/vaporwave-zl-1600x900.jpg">
+            </div>
+            <div class="slide cinco">
+                <img src="https://images7.alphacoders.com/909/909337.jpg">
+            </div>
+            <!-- Fim imagens -->
+            <!-- Começo Automatico -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+            </div>
+            <!-- Fim automatico -->
+        </div>
+        <!-- Começo Manual -->
+        <div class="navigation-manual">
+            <label for="r1" class="manual-btn"></label>
+            <label for="r2" class="manual-btn"></label>
+            <label for="r3" class="manual-btn"></label>
+            <label for="r4" class="manual-btn"></label>
+            <label for="r5" class="manual-btn"></label>
+        </div>
+    </div>
+    <!-- Fim carrosel -->
+
+    <script type="text/javascript">
+        var contador = 1;
+        setInterval(function () {
+            document.getElementById('r' + contador).checked = true;
+            contador++;
+            if (contador > 5) {
+                contador = 1;
+            }
+            if(contador < 1){
+                contador= 5;
+            }
+            
+        }, 5000);
+    </script>
+</body>
+
+</html>
